@@ -1,3 +1,7 @@
+'''
+发现bug，可能是数据分割的问题
+正在修复中
+'''
 import re
 from math import *
 import tkinter as tk
