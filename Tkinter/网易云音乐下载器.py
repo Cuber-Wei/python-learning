@@ -63,8 +63,6 @@ Enter2.grid(row=1, column=1, padx=10, pady=10)
 
 tk.Button(root, text="提交", width=10, command=handleMsg).grid(
     row=0, column=2, padx=10, pady=5)
-# tk.Button(root, text="删除", width=10, command=lambda x=List1: x.delete(
-#     tk.ACTIVE)).grid(row=1, column=1, sticky=tk.NW, padx=10, pady=5)
 
 # 主事件循环
 root.mainloop()
