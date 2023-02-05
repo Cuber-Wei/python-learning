@@ -62,7 +62,7 @@ Enter1.grid(row=0, column=1, padx=10, pady=10)
 Enter2 = tk.Entry(root, width=50)
 Enter2.grid(row=1, column=1, padx=10, pady=10)
 
-tk.Button(root, text="提交", width=10, command=handleMsg).grid(
+tk.Button(root, text="下载", width=10, command=handleMsg).grid(
     row=0, column=2, padx=10, pady=5)
 
 # 主事件循环
