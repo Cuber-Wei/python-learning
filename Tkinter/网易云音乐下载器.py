@@ -35,7 +35,7 @@ def handleMsg():
     id_match = re.compile(r"id=[0-9]{3,15}")
     id = id_match.findall(msg)[0][3:]
     name = re.findall('《(.*)》', msg)
-    name = str(id) if name == [] else name[0] if nAme == ''else nAme
+    name = nAme if nAme != '' else name[0] if name != [] else id
 
     # 爬取
     getMusic(path, int(id), name)
