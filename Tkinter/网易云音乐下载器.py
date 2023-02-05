@@ -21,7 +21,7 @@ def getMusic(path, music_id, music_name):
 
 def handleMsg():
     # 创建文件夹
-    path = PATH + r"\download_musics"
+    path = PATH + r"\download"
     try:
         os.mkdir(path)
     except:
@@ -53,7 +53,8 @@ root = tk.Tk()
 root.title("网易云音乐下载器(试听歌曲无法下载)")
 
 tk.Label(root, text="输入分享链接:").grid(row=0, column=0, padx=10, pady=10)
-tk.Label(root, text="输入保存文件名:").grid(row=1, column=0, padx=10, pady=10)
+tk.Label(root, text="输入保存文件名\n(可以为空,通过链接解析):").grid(
+    row=1, column=0, padx=10, pady=10)
 
 Enter1 = tk.Entry(root, width=50)
 Enter1.grid(row=0, column=1, padx=10, pady=10)
