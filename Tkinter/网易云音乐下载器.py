@@ -45,7 +45,6 @@ def handleMsg():
     with open(PATH + r"\log.txt", "a") as f:
         f.write(logMsg)
     print(logMsg)
-    time.sleep(2)
 
 
 # GUI界面编写
