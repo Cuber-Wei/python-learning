@@ -1,8 +1,8 @@
 import re
 import os
 import time
-import tkinter as tk
 import requests
+import tkinter as tk
 
 PATH = os.getcwd()
 
@@ -19,7 +19,7 @@ def getMusic(path, music_id, music_name):
     res = requests.get(url)
     if res.status_code == 200:
         mp3 = res.content
-        path += '\\' + music_name + ".mp3"
+        path += f'/{music_name}.mp3'
         with open(path, "wb") as file:
             file.write(mp3)
     else:
